@@ -19,3 +19,5 @@ valor_da_conta = st.number_input("Qual o valor da conta?", min_value=0.0, format
 if st.button('Calcular'):
     resultado = calcular_pagamento(pessoa, valor_da_conta)
     st.write(resultado)
+    if pessoa.lower() == "marido":
+        st.image("IMG_20231123_221318.jpg")
